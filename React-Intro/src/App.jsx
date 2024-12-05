@@ -1,16 +1,41 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-    <h1>Jamaal</h1>
-    </>
-  )
+
+
+
+
+
+function Header() {
+  return (<h1>Simple React Application</h1>)
 }
 
-export default App
+function Content() {
+  return (<p>This is my first React Application, wish me luck!</p>)
+}
+
+function Footer() {
+  return (<h1>Created by Me, of course.</h1>)
+}
+
+
+
+
+
+
+
+
+function App() {
+     return (
+    <>
+    <Header />
+    <Content color="blue" text="This is my React Application!" />
+    <Content color="red" text="Wish me luck..." />
+    <Content color="green" text="I think I've got it!" />
+    <Footer />
+    </>
+  );
+}
+
+export default App;
